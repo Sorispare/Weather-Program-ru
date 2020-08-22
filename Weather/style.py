@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'Pogoda2.0.ui'
-#
-# Created by: PyQt5 UI code generator 5.13.2
-#
-# WARNING! All changes made in this file will be lost!
-
+# Hi!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
