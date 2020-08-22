@@ -5,16 +5,16 @@ import config
 import requests
 from bs4 import BeautifulSoup as BS
 
-# Создвния Приложения
+# 1
 app = QtWidgets.QApplication(sys.argv)
 
-# Гланое
+# 2
 Pogoda = QtWidgets.QDialog()
 ui = Ui_Pogoda()
 ui.setupUi(Pogoda)
 Pogoda.show()
 
-# Логика
+# 3
 r = requests.get('https://sinoptik.ua/погода-лондон')
 html = BS(r.content, 'html.parser')
 
@@ -28,5 +28,5 @@ ui.MAX.setText(t_max)
 ui.TEXT.setText(text)
 
 
-# Главный цикл
+# 4
 sys.exit(app.exec_())
